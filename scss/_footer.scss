@@ -1,0 +1,96 @@
+$c-background:rgb(247, 219, 181); 
+$c-lines:rgb(166, 100, 15);
+$c-h1: rgb(240, 226, 207);
+$c-primary: rgb(240, 226, 207);
+$c-text: #4f190b;
+$gap-row: 20px;
+
+.footer {
+text-align: center;
+padding: 20px;
+background-color:rgb(160, 105, 34);
+color:$c-primary;
+margin-top: -80px;
+
+&__payment {margin-top: 80px;
+margin-bottom: 20px;}
+
+&__info {margin-bottom: 20px;}
+
+&__hours {display: none;}
+
+&__address {display:none;}
+
+
+    @media screen and (min-width: 650px) {
+        display:grid;
+        grid-template-columns: 5% 1fr 1fr 1fr 5%;
+        grid-template-rows: 60px repeat(4,auto);
+        row-gap: 20px;
+
+       &__payment { 
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+            margin-top: 0;}
+    
+        &__info {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+            text-align:left; }
+    
+        &__contact {grid-column: 4 / 5;
+            grid-row: 3 / 4 ;}
+
+            &_contact-type {display:flex;
+            justify-content:right;
+            align-items: center;}
+
+        &__copyright {grid-column: 1 / -1;
+        grid-row: 4 / 5; }
+       
+    }
+
+
+    @media screen and (min-width: 1100px) {
+        display:grid;
+
+        &__payment { 
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+            margin-top: 0;}
+    
+        &__info {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            text-align:left; }
+    
+        &__contact {grid-column: 4 / 5;
+            grid-row: 2 / 3 ;}
+
+        &__copyright {grid-column: 1 / -1;
+                grid-row: 4 / 5; }
+               
+            }}
+
+
+
+.footer > div {margin-bottom: 30px;
+
+        @media screen and (min-width: 650px) {
+            margin-bottom: 0;
+    }}
+
+.payment-logo {
+    margin-top: 10px;
+}
+.payment-logo:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer_contact-type>p {margin:0;}
+.footer_contact-type>img {padding-right: 5px;}
+
+.contact-photo {width: 1.8em;
+    height: 1.8em;
+    }
