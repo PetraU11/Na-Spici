@@ -69,7 +69,10 @@ $c-text: #4f190b;
     }
 
 .menu {
-  
+position:absolute;
+  z-index: 2;
+  right: -50px;
+
   @media screen and (min-width: 1000px) {
     display:none;
 }}
@@ -98,31 +101,25 @@ margin-top: 5px;
       padding: 0;
       list-style: none;
       background-color: $c-lines;
-      display:none; 
-  margin-top: 40px;}
+      display:none; }
 
   
-  .menu__item { border-bottom: 1px solid white;}
+  .menu__item { border-bottom: 1px solid #4f190b;
+  text-align:right;}
   
   .menu__link {
       display:block;
   padding: 15px;
   text-decoration: none;
-  color: white;
+  color: $c-primary;
   }
 
   .menu__link:hover {
-      background-color: rgb(202, 69, 45);
+      background-color: #4f190b;
   }
   
   .menu__checkbox:checked ~ .menu__list{
-display:inline-block; }
-
- 
- 
-
-
-
+display:inline-block;}
 
   .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(1) {
       position:absolute;
