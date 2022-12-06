@@ -1,0 +1,139 @@
+$c-background:rgb(247, 219, 181); 
+$c-lines:rgb(166, 100, 15);
+$c-h1: rgb(240, 226, 207);
+$c-primary: rgb(240, 226, 207);
+$c-text: #4f190b;
+
+.header {
+    background-color: rgb(240, 226, 207); 
+    background-image: url(../images/bar.jpg);
+    height: 320px;
+    background-size: cover;
+    border-bottom:15px solid $c-lines; 
+  }
+   
+  .header__container{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4);
+    border-bottom: 2px solid $c-lines;
+    border-top: 2px solid $c-lines;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    top: 50px;
+    width: 90%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    @media screen and (min-width: 1000px) {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }}
+
+  .header__subcontainer {
+    display:flex;
+  }
+ 
+  .header__heading {
+    max-width: 300px; 
+    max-height: 100px;
+    text-align: center;
+    color:$c-h1;
+    font-size:1.5em;
+    padding: 10px;
+
+    @media screen and (min-width: 300px) {
+      font-size:1.7em;
+    }
+
+    @media screen and (min-width: 1000px) {
+      margin-left:auto;
+      margin-right: auto;
+        max-width: 500px;
+        max-height: 300px;
+        margin: 0;
+        font-size: 2em;
+   }}
+  
+  .header__logo {
+        width: 120px;
+        padding-right: 10px;
+    
+    }
+
+.menu {
+  @media screen and (min-width: 1000px) {
+    display:none;
+}}
+
+.menu__checkbox {
+      position: absolute;
+      left: -9999px;}
+
+.menu__toggler { cursor:pointer;
+}
+  
+.hamburger {
+   width: 10%;}
+
+.bar { 
+      display: inline-block;
+      width: 40px;
+      height: 5px;
+background-color: $c-lines;;
+border-radius: 10%;
+}
+
+  .menu__list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      background-color: $c-lines;
+      display:none; 
+  margin-top: 40px;}
+
+  
+  .menu__item { border-bottom: 1px solid white;}
+  
+  .menu__link {
+      display:block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  }
+
+  .menu__link:hover {
+      background-color: rgb(202, 69, 45);
+  }
+  
+  .menu__checkbox:checked ~ .menu__list{
+display:inline-block; }
+
+ 
+ 
+
+
+
+
+  .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(1) {
+      position:absolute;
+      transform: rotate(45deg);
+  }
+
+  .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(2) {
+     display:none;
+  }
+
+  .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(3) {
+      position:absolute;
+      transform: rotate(-45deg);
+  }
+
+
+
+  

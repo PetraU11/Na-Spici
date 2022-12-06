@@ -9,12 +9,10 @@ $c-text: #4f190b;
     background-image: url(../images/bar.jpg);
     height: 320px;
     background-size: cover;
-    color: white;
     border-bottom:15px solid $c-lines; 
   }
    
   .header__container{
-    background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0, 0.4);
     border-bottom: 2px solid $c-lines;
     border-top: 2px solid $c-lines;
@@ -22,6 +20,8 @@ $c-text: #4f190b;
     margin-right: auto;
     position:relative;
     top: 50px;
+    width: 90%;
+    
     
     @media screen and (min-width: 1000px) {
     display:flex;

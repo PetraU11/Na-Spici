@@ -1,0 +1,117 @@
+@use 'header-about';
+@use 'footer-about';
+@use 'buttons-about';
+@use 'primary-logos-about';
+
+
+*, :after, :before { box-sizing: border-box; }
+
+/* Proměnné */
+$c-background:rgb(247, 219, 181); 
+$c-lines:rgb(166, 100, 15);
+$c-h1: rgb(240, 226, 207);
+$c-primary: rgb(240, 226, 207);
+$c-text: #4f190b;
+$gap-row: 20px;
+
+
+body {margin: 0;
+    font-family: 'Montserrat', sans-serif; }
+
+.content {
+    background-color: $c-background;  
+    position:relative;  
+    color: $c-text;  
+    border: 5px solid $c-lines;
+
+    @media screen and (min-width: 1000px) {
+     grid-template-rows: 500px auto auto auto;
+    }}
+
+
+.main {
+    border: 2px solid $c-text;
+    position: relative;
+    z-index: 1;
+    top: -45px;
+    bottom: 150px;
+    background-color: $c-primary; 
+    display:grid;
+    width: 90vw;
+    margin-left: auto;
+    margin-right:auto;
+   
+    @media screen and (min-width: 1000px) {
+        grid-template-columns: 5% repeat(6, 1fr) 5%; }}
+
+        
+.perex {
+margin-top: 30px;
+margin-bottom: 30px;
+text-align: center;
+margin-left: 10px;
+margin-right: 10px;
+grid-row: 3 / 4;
+
+    @media screen and (min-width: 1000px) {
+        grid-row: 2 / 3;
+        grid-column: 3 / 6;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-top: 0;
+}}
+
+.perex__hr {
+border: 1px solid $c-lines;
+margin-left: 40px;
+margin-right: 40px; }
+
+
+.news {
+margin: 30px auto;
+text-align: center; 
+grid-row: 6 / 7;
+
+    @media screen and (min-width: 1000px) {
+    grid-row: 3 / 4;
+    grid-column: 3 / 6;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+   }
+}
+
+
+.hours {margin: 30px auto;
+    text-align: center;
+   
+    @media screen and (min-width: 1000px) {
+        grid-row: 6 / 7;
+        grid-column: 3 / 6;
+            } }
+
+
+.address { 
+text-align: center;
+margin-left: auto;
+margin-right:auto;
+   
+&__pin {width: 1.5em;
+    margin-right: 5px; }
+
+    @media screen and (min-width: 1000px) {
+        grid-row: 7 / 8;
+        grid-column: 3 / 6;
+        text-align: left;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+}
+  
+
+
+
+
+
+    
