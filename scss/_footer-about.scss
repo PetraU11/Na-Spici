@@ -22,7 +22,7 @@ margin-bottom: 20px;}
     @media screen and (min-width: 750px) {
         display:grid;
         grid-template-columns: 5% 1fr 1fr 1fr 5%;
-        grid-template-rows: 70px repeat(4,auto);
+        grid-template-rows: 60px repeat(4,auto);
         row-gap: 20px;
 
        &__payment { 
