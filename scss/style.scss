@@ -16,18 +16,8 @@ $gap-row: 20px;
 
 
 body {margin: 0;
-    font-family: 'Montserrat', sans-serif; }
-
-.content {
-    background-color: $c-background;  
-    position:relative;  
-    color: $c-text;  
-    border: 5px solid $c-lines;
-
-    @media screen and (min-width: 1000px) {
-     grid-template-rows: 500px auto auto auto;
-    }}
-
+    font-family: 'Montserrat', sans-serif;
+    background-color: $c-background;  }
 
 .main {
     border: 2px solid $c-text;
