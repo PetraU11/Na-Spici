@@ -35,7 +35,9 @@ margin-bottom: 20px;}
             grid-row: 3 / 4;
             text-align:left; }
     
-        &__contact {grid-column: 4 / 5;
+        &__contact {
+            margin-top: 15px;
+            grid-column: 4 / 5;
             grid-row: 3 / 4 ;}
 
             &_contact-type {display:flex;
@@ -66,7 +68,9 @@ margin-bottom: 20px;}
             grid-row: 3 / 4;
             text-align:left; }
     
-        &__contact {grid-column: 4 / 5;
+        &__contact {
+            margin-top: 15px;
+            grid-column: 4 / 5;
             grid-row: 3 / 4 ;}
 
         &__copyright {grid-column: 1 / -1;

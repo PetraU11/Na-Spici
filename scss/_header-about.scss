@@ -46,7 +46,7 @@ $c-text: #4f190b;
     max-height: 100px;
     text-align: left;
     color:$c-h1;
-    font-size:1.5em;
+    font-size:120%;
     padding: 10px;
 
   @media screen and (min-width: 500px) {
@@ -62,8 +62,8 @@ $c-text: #4f190b;
    }}
   
   .header__logo {
-        width: 70px;
-       height: 70px;
+      width: 30%;
+      height: 30%;
 
        @media screen and (min-width: 500px) {
         width: 100px;
@@ -75,7 +75,7 @@ position:absolute;
   z-index: 2;
   right: -70px;
   height: 60px;
-  
+
 
   @media screen and (min-width: 1000px) {
     display:none;
@@ -85,16 +85,14 @@ position:absolute;
       position: absolute;
       left: -9999px;}
 
-.menu__toggler { cursor:pointer;
- 
-}
+.menu__toggler { cursor:pointer;}
   
 .hamburger {
    width: 30%;}
 
 .bar { 
 display: inline-block;
-width: 40px;
+width: 35px;
 height: 5px;
 background-color: $c-lines;;
 border-radius: 10%;
@@ -103,12 +101,16 @@ margin-top: 5px;
 
   .menu__list {
       margin: 0;
-      margin-right: 50px;
-      margin-top: 93px;
+      margin-right: 70px;
+      margin-top: 85px;
       padding: 0;
       list-style: none;
       background-color: $c-lines;
-      display:none; }
+      display:none; 
+    
+      @media screen and (min-width: 500px) {
+      margin-top: 102px;
+    }}
 
   
   .menu__item { border-bottom: 1px solid #4f190b;
@@ -135,23 +137,24 @@ display:inline-block;
 
 
 .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(1) {
-      position:absolute;
-      top: 25px;
-      right: 75px;
-      width: 30%;
-      transform: rotate(45deg);
+  position:absolute;
+  top: 25px;
+  right: 75px;
+  width: 45px;
+  transform:rotate(45deg);
   }
 
 .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(2) {
      display:none;
   }
 
-  .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(3) {
-      position:absolute;
-      top: 25px;
-      right: 75px;
-      width: 30%;
-      transform: rotate(-45deg);
-  }
+.menu__checkbox:checked ~ .menu__toggler .bar:nth-child(3) {
+  position:absolute;
+  top: 25px;
+  right: 75px;
+  width: 45px;
+  transform:rotate(-45deg);
+}
+  
 
   
